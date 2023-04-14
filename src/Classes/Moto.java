@@ -27,7 +27,13 @@ public class Moto extends Veiculo {
         }
         this.partida = partida;
     }
+    
+    public String toString() {
+        String a = "\nINFORMAÇÕES MOTO:\n Modelo: "+this.getModelo()+"\n Placa: "+this.getPlaca()+"\n Montadora: "+this.getMontadora()+"\n Ano: "+this.getAno()+"\n Cor:"+this.getCor()+"\n Cilindrada: "+this.getCilindrada()+"\n Velocidade Máxima: "+this.getVelocidadeMaxima()+"\n Combustível: "+this.getCombustivel()+"\n Partida: "+this.getPartida(); 
+        return a;
+    }
 
+    
     public Integer getCilindrada() {
         return cilindrada;
     }
@@ -59,6 +65,6 @@ public class Moto extends Veiculo {
     public void setPartida(String partida) {
         this.partida = partida;
     }
-    
+
     
 }

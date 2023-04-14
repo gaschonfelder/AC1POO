@@ -20,7 +20,12 @@ public class Caminhao extends Veiculo{
         this.numeroRoda = numeroRoda;
         this.torque = torque;
     }
-
+    
+    public String toString() {
+        String a = "\nINFORMAÇÕES MOTO:\n Modelo: "+this.getModelo()+"\n Placa: "+this.getPlaca()+"\n Montadora: "+this.getMontadora()+"\n Ano: "+this.getAno()+"\n Cor:"+this.getCor()+"\n Eixos: "+this.getEixos()+"\n Carga: "+this.getCarga()+"\n Transmissão: "+this.getTransmissão()+"\n Número de Rodas: "+this.getNumeroRoda()+"\n Torque: "+this.getTorque(); 
+        return a;
+    }
+    
     public Integer getEixos() {
         return eixos;
     }

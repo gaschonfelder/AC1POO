@@ -19,7 +19,10 @@ public class Carro extends Veiculo {
         this.direcao = direcao;
         this.motor = motor;
     } 
-    
+    public String toString() {
+        String a = "\nINFORMAÇÕES MOTO:\n Modelo: "+this.getModelo()+"\n Placa: "+this.getPlaca()+"\n Montadora: "+this.getMontadora()+"\n Ano: "+this.getAno()+"\n Cor:"+this.getCor()+"\n Potência: "+this.getPortencia()+"\n Portas: "+this.getPortas()+"\n Pessoas: "+this.getPessoas()+"\n Direção: "+this.getDirecao()+"\n Motor: "+this.getMotor(); 
+        return a;
+    }
 
     public Integer getPortencia() {
         return portencia;
